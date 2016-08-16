@@ -21,14 +21,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/StudentName"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Nikesh Kumar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/StudentRegNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Third Year" />
+        android:text="311013205035" />
 
 </LinearLayout>

@@ -8,11 +8,16 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class StudentNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    TextView txtStudRegNo,txtStudName;
 
 
 
@@ -33,6 +38,16 @@ public class StudentNav extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        SQLiteHandler repo=new SQLiteHandler(StudentNav.this);
+        String StudRegNo=repo.getStudentRegNo();
+        String StudName=repo.getStudentName();
+        View header=navigationView.getHeaderView(0);
+
+        txtStudRegNo=(TextView)header.findViewById(R.id.StudentRegNo);
+        txtStudName=(TextView)header.findViewById(R.id.StudentName);
+
+        txtStudRegNo.setText(StudRegNo);
+        txtStudName.setText(StudName);
 
     }
 

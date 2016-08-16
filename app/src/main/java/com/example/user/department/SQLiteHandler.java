@@ -89,6 +89,26 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         return i;
     }
 
+    public String getStudentName()
+    {
+        SQLiteDatabase db=this.getReadableDatabase();
+        String query = "SELECT " + KEY_NAME + " FROM " + TABLE_USER + " WHERE " + KEY_ID + "=1";
+        Cursor c =db.rawQuery(query,null);
+        c.moveToFirst();
+        String i=c.getString(0);
+        return i;
+    }
+
+    public String getStudentRegNo()
+    {
+        SQLiteDatabase db=this.getReadableDatabase();
+        String query="SELECT "+KEY_UID+" FROM "+TABLE_USER+" WHERE "+KEY_ID+"=1";
+        Cursor c=db.rawQuery(query,null);
+        c.moveToFirst();
+        String i=c.getString(0);
+        return i;
+    }
+
     /**
      * Getting user data from database
      * */
