@@ -107,7 +107,7 @@ public class AdminChangeOD extends AppCompatActivity implements Spinner.OnItemSe
                 }
                 else
                 {
-                    updateCT(selectedCounsellor,selectedYear);
+                    updateCT(selectedCounsellor,dept);
                 }
             }
         });
