@@ -40,4 +40,10 @@
         android:text="Change HOD"
         android:id="@+id/btnChangeHOD"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:id="@+id/btnSignOut"/>
+
 </LinearLayout>
