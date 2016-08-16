@@ -52,7 +52,7 @@ package com.example.user.department;
 
             edtUser=(EditText)findViewById(R.id.edtUser);
             edtPwd=(EditText)findViewById(R.id.edtPass);
-            btnAdmin=(Button) findViewById(R.id.btnAdmin);
+            //btnAdmin=(Button) findViewById(R.id.btnAdmin);
 
             // Progress dialog
             pDialog = new ProgressDialog(this);
@@ -96,14 +96,14 @@ package com.example.user.department;
 
             }
 
-            btnAdmin.setOnClickListener(new View.OnClickListener() {
+            /*btnAdmin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent=new Intent(Login.this,CreateAdmin.class);
                     startActivity(intent);
                     finish();
                 }
-            });
+            });*/
 
 
 

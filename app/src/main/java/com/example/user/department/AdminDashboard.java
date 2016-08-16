@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class AdminDashboard extends AppCompatActivity {
 
-    Button btnCreateStaff,btnChangeCT, btnChangeCounsellor, btnChangeODIncharge, btnChangeHOD;
+    Button btnCreateStaff,btnChangeCT, btnChangeCounsellor, btnChangeODIncharge, btnChangeHOD ,btnSignOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class AdminDashboard extends AppCompatActivity {
         btnChangeCounsellor=(Button)findViewById(R.id.btnChangeCounsellor);
         btnChangeODIncharge=(Button)findViewById(R.id.btnChangeODIncharge);
         btnChangeHOD=(Button)findViewById(R.id.btnChangeHOD);
+        btnSignOut=(Button)findViewById(R.id.btnSignOut);
 
         btnCreateStaff.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +65,19 @@ public class AdminDashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(AdminDashboard.this,AdminChangeCT.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        btnSignOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SessionManager session=new SessionManager(AdminDashboard.this);
+                session.setLogin(false);
+                SQLiteHandler repo=new SQLiteHandler(getApplicationContext());
+                repo.deleteUsers();
+                Intent intent=new Intent(AdminDashboard.this,Login.class);
                 startActivity(intent);
                 finish();
             }
