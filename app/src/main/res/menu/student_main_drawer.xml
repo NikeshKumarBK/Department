@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_assignment"
+
+            android:title="Assignment" />
+
+        <item
+            android:id="@+id/nav_attendance"
+
+            android:title="Attendance" />
+
+        <item
+            android:id="@+id/nav_exam_schedule"
+
+            android:title="Exam Schedule" />
+
+        <item
+            android:id="@+id/nav_leave_apply"
+
+            android:title="Apply Leave" />
+
+        <item
+            android:id="@+id/nav_od_leave"
+
+            android:title="Apply OD" />
+
+        <item
+            android:id="@+id/nav_sem_plan"
+
+            android:title="Semester Plan" />
+
+        <item
+            android:id="@+id/nav_time_table"
+
+            android:title="Time Table" />
+    </group>
+
+    <item android:title="Exam Results">
+        <menu>
+            <item
+                android:id="@+id/nav_unit_test"
+                android:title="Unit Test" />
+            <item
+                android:id="@+id/nav_university"
+                android:title="University Result" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_sign_out"
+
+        android:title="Sign Out" />
+
+</menu>

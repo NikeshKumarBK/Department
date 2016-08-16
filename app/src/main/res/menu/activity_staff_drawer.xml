@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Student">
+        <menu>
+            <item
+                android:id="@+id/nav_staff_mark_entry"
+                android:title="Mark Entry" />
+            <item
+                android:id="@+id/nav_staff_new_assign"
+                android:title="New Assignment" />
+            <item
+                android:id="@+id/nav_staff_od_approvals"
+                android:title="OD Approvals" />
+            <item
+                android:id="@+id/nav_staff_stu_attend"
+                android:title="Student Attendance" />
+        </menu>
+    </item>
+
+    <item android:title="Staff">
+        <menu>
+            <item
+                android:id="@+id/nav_staff_od"
+                android:title="Apply OD" />
+            <item
+                android:id="@+id/nav_staff_leave"
+                android:title="Apply Leave" />
+            <item
+                android:id="@+id/nav_staff_time_table"
+                android:title="Time Table" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_sign_out"
+
+        android:title="Sign Out" />
+
+
+</menu>

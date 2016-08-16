@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.department">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StudentNav"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterStudent"
+            android:label="@string/title_activity_register_student"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StaffNav"
+            android:label="@string/title_activity_staff"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".StudentMonday" />
+        <activity android:name=".StaffMonday" />
+        <activity android:name=".StudentAssignmentDesc" />
+        <activity android:name=".StudentExamSchedulePort" />
+        <activity android:name=".SuccessActivity" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".CreateStaff" />
+        <activity android:name=".AdminChangeCT" />
+        <activity android:name=".AdminChangeCounsellor" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateAdmin" />
+        <activity android:name=".AdminChangeOD" />
+        <activity android:name=".AdminChangeHOD"></activity>
+    </application>
+
+</manifest>
