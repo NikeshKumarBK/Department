@@ -93,7 +93,6 @@ package com.example.user.department;
                     finish();
                 }
 
-
             }
 
             /*btnAdmin.setOnClickListener(new View.OnClickListener() {
@@ -175,8 +174,7 @@ package com.example.user.department;
                             String name = user.getString("Name");
                             String dept = user.getString("Department");
                             //String desig = user.getString("desig");
-                            String Role = user
-                                    .getString("Role");
+                            String Role = user.getString("Role");
 
                             // Inserting row in users table
                             db.addUser(name, dept, uid, Role);

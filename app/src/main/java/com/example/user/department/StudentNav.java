@@ -1,5 +1,6 @@
 package com.example.user.department;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -12,12 +13,19 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class StudentNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     TextView txtStudRegNo,txtStudName;
+    private DatePickerDialog datePickerDialog;
+    private SimpleDateFormat simpleDateFormat;
 
 
 
@@ -150,4 +158,15 @@ public class StudentNav extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+        public void btnClick(View view)
+        {
+
+            int id=view.getId();
+            if(id==R.id.edtEventFrom)
+            {
+                StudOdApproval studOdApproval=new StudOdApproval();
+                studOdApproval.setDateTimeField();
+            }
+        }
 }

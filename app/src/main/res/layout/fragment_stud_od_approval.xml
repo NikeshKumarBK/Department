@@ -67,12 +67,11 @@
         android:layout_below="@+id/l1"
         android:id="@+id/l2"
         android:orientation="horizontal"
-
-
         >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/edtEventName"
             android:hint="Event Name"
             android:textSize="20sp"/>
     </LinearLayout>
@@ -90,6 +89,8 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:hint="From"
+
+            android:id="@+id/edtEventFrom"
             android:paddingRight="50sp"
             />
         <View
@@ -101,6 +102,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:id="@+id/edtEventTo"
             android:paddingLeft="20sp"
             android:hint="To"/>
     </LinearLayout>
@@ -110,19 +112,18 @@
         android:layout_below="@+id/l3"
         android:id="@+id/l4"
         android:orientation="horizontal"
-
-
         >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/edtPlaceName"
             android:hint="Place Name"
             android:textSize="20sp"/>
     </LinearLayout>
 
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
+            android:id="@+id/btnOdApply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
